@@ -8,6 +8,10 @@ app.get('/', (req,res) =>{
     res.send("Hello World!");
 })
 
+app.get('/log', (req,res)=>{
+  res.send("Hello Render");
+})
+
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
     res.header(
